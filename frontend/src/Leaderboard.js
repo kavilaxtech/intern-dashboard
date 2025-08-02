@@ -1,4 +1,3 @@
-// src/Leaderboard.js
 import React, { useEffect, useState } from 'react';
 import './App.css';
 
@@ -6,9 +5,13 @@ function Leaderboard() {
   const [leaders, setLeaders] = useState([]);
 
   useEffect(() => {
-    fetch('https://intern-dashboard-7bpz.onrender.com/api/data')
+    fetch('https://intern-dashboard-7bpz.onrender.com/api/leaderboard')
       .then(res => res.json())
-      .then(data => setLeaders(data));
+      .then(data => setLeaders(data))
+      .catch(err => {
+        console.error("Error fetching leaderboard:", err);
+        setLeaders([]);
+      });
   }, []);
 
   return (
@@ -22,7 +25,7 @@ function Leaderboard() {
           </tr>
         </thead>
         <tbody>
-          {leaders.map((person, idx) => (
+          {Array.isArray(leaders) && leaders.map((person, idx) => (
             <tr key={idx}>
               <td>{person.name}</td>
               <td style={{ textAlign: 'right' }}>{person.amountRaised}</td>
