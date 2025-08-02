@@ -6,7 +6,8 @@ function Dashboard({ userName }) {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/data')
+    fetch('https://intern-dashboard-7bpz.onrender.com/api/data')
+
       .then(res => res.json())
       .then(data => setData(data));
   }, []);
