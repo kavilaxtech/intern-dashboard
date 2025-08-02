@@ -1,0 +1,67 @@
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+nav {
+  background-color: #062042;
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: rgb(254, 251, 251);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: rgb(191, 191, 224);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+  color: #071d39;
+}
+
+input {
+  padding: 0.6rem;
+  width: 80%;
+  max-width: 300px;
+  font-size: 1rem;
+  border: 1px solid #f9f2f2;
+  border-radius: 6px;
+}
+
+button {
+  background-color: #1d2f47;
+  color: rgb(250, 242, 242);
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #0c0d0d;
+}
+
+ul {
+  padding-left: 1.5rem;
+}

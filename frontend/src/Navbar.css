@@ -1,0 +1,35 @@
+/* src/Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #002b5b;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.navbar-left .logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.nav-item:hover {
+  background: #041e3d;
+  transform: scale(1.05);
+}
