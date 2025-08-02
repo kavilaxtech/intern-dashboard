@@ -48,3 +48,4 @@ Vercel (for frontend)
 
 Render (for backend)
 
+<img width="1920" height="1030" alt="React App - Google Chrome 02-08-2025 21_40_21" src="https://github.com/user-attachments/assets/70b2cc73-be4e-4e25-bac6-7a95c40c6690" />
