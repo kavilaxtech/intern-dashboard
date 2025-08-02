@@ -5,14 +5,14 @@ import Login from './Login';
 import Dashboard from './Dashboard';
 import Leaderboard from './Leaderboard';
 import Navbar from './Navbar';
-import Welcome from './Welcome'; // optional welcome page
+import Welcome from './Welcome'; 
 
 function App() {
   const [userName, setUserName] = useState('');
 
   return (
     <Router>
-      <Navbar /> {/* <-- Navbar here */}
+      <Navbar /> 
 
       <Routes>
         <Route path="/" element={<Welcome />} /> {/* Optional */}

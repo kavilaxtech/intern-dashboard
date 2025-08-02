@@ -1,70 +1,124 @@
-# Getting Started with Create React App
+Certainly. Here's a **clean, professional `README.md`** suitable for your internship task submission — written as if by a developer, without any informal tone or giveaways:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+```markdown
+# Intern Dashboard Portal
 
-In the project directory, you can run:
+A full-stack web application developed as part of the Round 1 Task for the Full Stack Developer Internship. This portal allows interns to log in, view their details, referral codes, total donations raised, and earned rewards. It also includes an optional leaderboard feature.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Login/Signup Page** (Dummy)
+- **Intern Dashboard** showing:
+  - Intern name
+  - Referral code
+  - Total donations raised (fetched from backend)
+  - Rewards list
+- **Leaderboard** (Optional)
+- **REST API backend** with static JSON data
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+- **Frontend**: React (Create React App), React Router DOM
+- **Backend**: Node.js, Express.js
+- **Styling**: CSS
+- **Data Source**: Static JSON
+- **Version Control**: Git, GitHub
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Folder Structure
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+intern-dashboard/
+├── backend/
+│   ├── data/
+│   └── routes/
+├── frontend/
+│   ├── public/
+│   └── src/
+├── README.md
+└── ...
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prerequisites
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Node.js and npm installed
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 1. Clone the Repository
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+git clone https://github.com/<your-username>/intern-dashboard.git
+cd intern-dashboard
+````
 
-## Learn More
+### 2. Install Dependencies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Backend
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+cd backend
+npm install
+```
 
-### Code Splitting
+#### Frontend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+cd ../frontend
+npm install
+```
 
-### Analyzing the Bundle Size
+### 3. Run the Application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### Start Backend Server
 
-### Making a Progressive Web App
+```bash
+cd backend
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+#### Start Frontend App
 
-### Advanced Configuration
+In a separate terminal:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+cd frontend
+npm start
+```
 
-### Deployment
+### 4. View in Browser
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Open your browser at:
+`http://localhost:3000`
 
-### `npm run build` fails to minify
+## API Endpoints
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* `GET /api/interns/:id`: Fetch details of a specific intern
+* `GET /api/leaderboard`: Retrieve the leaderboard data
+
+## Deployment
+
+Deployed on \[Vercel / Netlify / Render / Railway]
+Link: [https://your-deployed-link.com](https://your-deployed-link.com)
+
+## Screenshots
+
+*Add screenshots here if required*
+
+## Author
+
+This project was developed by \[Your Full Name] as part of the Round 1 Internship Task.
+
+```
+
+---
+
+### ✅ What to Replace:
+- Replace `https://github.com/<your-username>/intern-dashboard.git` with your actual repo URL.
+- Update the deployment link (`https://your-deployed-link.com`) if deployed.
+- Optionally add screenshots in the `Screenshots` section.
+
+Would you like the same for the backend `README.md` separately?
+```
